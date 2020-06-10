@@ -1,0 +1,66 @@
+Request method:	GET
+Request URI:	http://gp-fulfillment-zamboni-nonprod-route-gtm-gp-fulfillment-hub.origin-ctc-core-nonprod.optum.com/api/actuator/health
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/vnd.spring-boot.actuator.v3+json
+Transfer-Encoding: chunked
+Date: Thu, 23 Apr 2020 12:51:46 GMT
+Set-Cookie: 6261323a3ac8880bc05522468de27476=ae247fcd7a9c22961b073de504de01e4; path=/; HttpOnly
+Cache-control: private
+Set-Cookie: BIGipServerapps-new.origin-ctc-core-nonprod.optum.com_80=3819263498.20480.0000; path=/; Httponly
+
+{
+    "status": "UP"
+}
+Request method:	GET
+Request URI:	http://gp-fulfillment-zamboni-nonprod-route-gtm-gp-fulfillment-hub.origin-ctc-core-nonprod.optum.com/api/actuator/info
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Vary: Origin
+Vary: Access-Control-Request-Method
+Vary: Access-Control-Request-Headers
+Content-Type: application/vnd.spring-boot.actuator.v3+json
+Transfer-Encoding: chunked
+Date: Thu, 23 Apr 2020 12:51:50 GMT
+Set-Cookie: 6261323a3ac8880bc05522468de27476=ae247fcd7a9c22961b073de504de01e4; path=/; HttpOnly
+Cache-control: private
+Set-Cookie: BIGipServerapps-new.origin-ctc-core-nonprod.optum.com_80=375901194.20480.0000; path=/; Httponly
+
+{
+    "git": {
+        "branch": "master",
+        "commit": {
+            "id": "64c2b11",
+            "time": "2020-04-20T15:23:43Z"
+        }
+    },
+    "build": {
+        "version": "0.0.1-SNAPSHOT",
+        "artifact": "gp-fulfillment-zamboni",
+        "jenkins": "5",
+        "name": "gp-fulfillment-zamboni",
+        "time": "2020-04-20T15:26:11.437Z",
+        "group": "com.optum.gpfulfillmentzamboni"
+    }
+}

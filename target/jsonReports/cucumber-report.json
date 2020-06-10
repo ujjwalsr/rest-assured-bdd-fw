@@ -1,0 +1,180 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-04-23T12:51:38.861Z",
+        "line": 4,
+        "name": "Validate that gp-fulfillment-zamboni-helth service is running on environment",
+        "description": "",
+        "id": "validate-that-gp-fulfillment-zamboni-service-is-running-on-stage--prod-and-non-prod-environment;validate-that-gp-fulfillment-zamboni-helth-service-is-running-on-environment",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3258351600,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "gp-fulfillment-zamboni has been set up in OpenShift",
+            "match": {
+              "location": "stepDefinations.ZamboniStepDefination.gp_fulfillment_zamboni_has_been_set_up_in_OpenShift()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 5006992100,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user hits \"zamboniHealthAPI\" api with get http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"zamboniHealthAPI\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinations.ZamboniStepDefination.user_hits_health_api_for_non_prod_environment(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3998100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user gets the response with success status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 48
+                }
+              ],
+              "location": "stepDefinations.ZamboniStepDefination.user_gets_the_response_with_success_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2153190500,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "status \"UP\" in response body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"UP\"",
+                  "offset": 7
+                }
+              ],
+              "location": "stepDefinations.ZamboniStepDefination.status_UP_in_response_body(java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@healthcheck"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2020-04-23T12:51:49.584Z",
+        "line": 11,
+        "name": "Validate that gp-fulfillment-zamboni-info service is running on environment",
+        "description": "",
+        "id": "validate-that-gp-fulfillment-zamboni-service-is-running-on-stage--prod-and-non-prod-environment;validate-that-gp-fulfillment-zamboni-info-service-is-running-on-environment",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5004000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "gp-fulfillment-zamboni has been set up in OpenShift",
+            "match": {
+              "location": "stepDefinations.ZamboniStepDefination.gp_fulfillment_zamboni_has_been_set_up_in_OpenShift()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 663536700,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user hits \"zamboniInfoAPI\" api with get http request",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"zamboniInfoAPI\"",
+                  "offset": 10
+                }
+              ],
+              "location": "stepDefinations.ZamboniStepDefination.user_hits_health_api_for_non_prod_environment(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user gets the response with success status code 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 48
+                }
+              ],
+              "location": "stepDefinations.ZamboniStepDefination.user_gets_the_response_with_success_status_code(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 72987600,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "branch name is \"master\" and name \"gp-fulfillment-zamboni\" in the response body",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"master\"",
+                  "offset": 15
+                },
+                {
+                  "val": "\"gp-fulfillment-zamboni\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinations.ZamboniStepDefination.branch_name_is_master_and_name_gp_fulfillment_zamboni(java.lang.String,java.lang.String)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@infocheck"
+          }
+        ]
+      }
+    ],
+    "name": "Validate that gp-fulfillment-zamboni service is running on stage, prod and non-prod environment",
+    "description": "",
+    "id": "validate-that-gp-fulfillment-zamboni-service-is-running-on-stage--prod-and-non-prod-environment",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/features/gp_fulfillment_zamboni.feature",
+    "tags": []
+  }
+]
